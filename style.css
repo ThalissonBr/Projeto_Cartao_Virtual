@@ -23,6 +23,7 @@
   --switch-bg-url: url(./assets/sun.svg);
 }
 body {
+  height: 100vh;
   background: var(--bg-url) top center/cover;
 }
 body * {
@@ -147,4 +148,15 @@ footer{
   border: 1px solid var(--stroke-color);
   background: var(--surface-color);
   backdrop-filter: blur(4px);
+}
+
+@media(min-width: 700px){
+  :root{
+    --bg-url:url(./assets/Background-desktop.png);
+  }
+
+  .lightmode{
+    --bg-url: url(./assets/Background-desktop-light.png);
+  }
+
 }
